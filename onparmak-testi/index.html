@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On Parmak Testi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="stats">
+        <h1>İEÖ</h1>
+        <p>Süre :<span id="timer"> 0s</span></p>
+        <p>Hata : <span id="mistakes"> 0</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown="return false"
+        onselectstart="return false"
+      ></div>
+      <textarea id="quote-input" rows="3" placeholder="Teste başla"></textarea>
+      <button id="start" onclick="startTest()">Başla</button>
+      <button id="stop" onclick="displayResult()">Dur</button>
+      <div class="result">
+        <h3>Sonuç</h3>
+        <div class="wrapper">
+          <p>Doğru: <span id="accuracy"></span></p>
+          <p>Hız: <span id="wpm"></span></p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
